@@ -1,0 +1,30 @@
+Mat Fukano
+matfukano.com  |  github.com/mfukano  |  linkedin.com/in/marotafuka fukano.mat@gmail.com  |  925.286.1444
+Summary
+To use my passion for web development and computer science fundamentals to implement clean and functional website design centered on usability.
+
+Education
+BSc in Computer Science 
+University of California, Santa Cruz (2011 — 2015)
+Notable Classes: Software Engineering, Mobile Development, Web Design
+
+Skills
+Languages: JavaScript, Ruby, HTML, Sass, Java, XML
+Software & Libraries: Bootstrap, Rails, Sinatra, jQuery, Postgres
+Development: Agile (SCRUM), UML modeling, acceptance TDD
+
+Strengths
+Able to learn quickly in an individual setting, and troubleshoot effectively
+Open-minded about design ideas, communicate well about ideas and process
+Multitasks well, demonstrated adaptability and flexibility in a working environment
+
+Projects
+“Pocket Mom” (2016) — Front-end Developer
+Landing page for productivity app built with jQuery / JS / HTML / CSS
+“matfukano.com” (2016) — Front-end Developer
+My personal website, built with jQuery / JS / HTML / CSS
+“Just the Tip” (2015) — Java programmer and UX development on a team of 3
+Android app for local tip payments and pay-share via QR codes
+“Not Zombies” (2015) — Product owner and developer on a team of 5
+Top-down survival game built in Unity and C# over 10 weeks
+SCRUM to manage deadlines and focus development
