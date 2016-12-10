@@ -23,13 +23,13 @@
   100% { opacity: 1; }
 }
 
-/* 
+/*
 My display preference is no scrollbar;
 If the content is long enough to warrant scrolling,
 it should be intuitive enough by the look of the page.
 */
 ::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 html, body {
@@ -67,20 +67,30 @@ h2 {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
 p, li, em {
-  font-size: 16px;
-  letter-spacing: 0.8px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
   font-family: sans-serif;
   background-color: #fff;
+  margin: 0;
 }
 
 ul {
   list-style: none;
   -webkit-padding-start: 0px;
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
 }
 
 li {
   margin-left: 15px;
+  line-height: 25px;
 }
 
 /* box model, layer by layer */
@@ -126,13 +136,6 @@ li {
 .box.bottom {
   bottom: 0;
 }
-
-/*
-.wrapper p,h2,i,br {
-  display: none;
-}
-
-*/
 .active .wrapper p,h2,i,br {
   display: block;
   position: auto;
@@ -147,8 +150,8 @@ li {
   opacity: 0;
   width: 80%;
   margin: 0 auto;
-  padding-top: 0px;
-  padding-bottom: 90px;
+  margin-bottom: 50px;
+  padding: 0;
   transition: opacity 100ms cubic-bezier(0.19, 1, 0.22, 1), visibility 0s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -161,16 +164,14 @@ li {
   max-height: 10000px;
   transition: visibility 200ms 100ms cubic-bezier(0.19, 1, 0.22, 1);
   padding: 0 30px;
-    /* 
+    /*
   * TODO: figure out how to add an ::after element
-  * so you can size this to what you want 
+  * so you can size this to what you want
   */
   border-right: 1px solid rgba(114, 182, 234, 0.2);
   border-left: 1px solid rgba(114, 182, 234, 0.2);
 
 }
-
-
 
 /* Front-page divider */
 .divider {
@@ -322,6 +323,7 @@ li {
   margin: 5px 0;
   padding-top: 5px;
   border-top: 1px solid #8BC3ED;
+  font-size: 18px;
 }
 
 .project-link {
@@ -336,9 +338,9 @@ li {
 
 .project-li {
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
+  line-height: 25px;
 }
-
 
 .separator {
   line-height: 0;
@@ -359,7 +361,6 @@ li {
   margin: 0 auto;
   margin-left: -10px;
 }
-
 
 /* projects menu */
 .project-dropdown:hover {
@@ -394,6 +395,7 @@ p.carousel_controls {
   text-align:center;
   margin-top: 15px;
 }
+
 .carousel_controls span {
   cursor:pointer;
   text-align: center;
@@ -422,7 +424,7 @@ p.carousel_controls {
 
 /* Media queries by project */
 
-/* 
+/*
   JTT project box sizing begins here */
 @media screen and (min-width: 990px) {
   p.carousel_controls {
@@ -466,7 +468,7 @@ p.carousel_controls {
   top: 10%;
   left: 10%;
   border-radius: 3px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.9);  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
 
   -webkit-transition: opacity 100ms ease-in-out;
   -moz-transition: opacity 100ms ease-in-out;
