@@ -365,24 +365,32 @@ li {
   margin-left: -10px;
 }
 
+.project-container {
+  display: none;
+}
+
+.current .project-container {
+  display: block;
+}
+
 /* projects menu */
-.project-dropdown:hover {
+.project-dropdown:hover, .project-dropdown:hover * {
   background: #407899;
   border-radius: 5px;
   font-style: none;
 }
 
-.hide {
-  display: none;
+.project-dropdown:hover .go-icon {
+  visibility: visible;
 }
 
 .current {
-  display: visible;
+  display: block;
   background-color: #fff;
 }
 
-.current * {
-  background-color: #fff;
+.current .go-icon {
+  visibility: visible;
 }
 
 .current:hover, .current:hover * {
@@ -457,6 +465,10 @@ p.carousel_controls {
   width: auto;
   margin:0 auto 10px;
   margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel img {
@@ -464,8 +476,6 @@ p.carousel_controls {
   max-height: 100%;
   height: auto;
   max-width: 80%;
-  top: 10%;
-  left: 10%;
   border-radius: 3px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.9);
 
@@ -484,17 +494,6 @@ div.shadow {
     max-height:65%;
     overflow:visible;
     margin-left: -10%;
-}
-
-.carousel img:empty
-{
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .carousel img.opaque {

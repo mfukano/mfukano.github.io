@@ -1,4 +1,4 @@
-// // Open profile quarter for more information
+// Open page quadrant
 let box = document.getElementsByClassName('box')
 Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
 
@@ -6,63 +6,63 @@ function activateBox(e) {
   this.classList.toggle('active')
   this.firstElementChild.classList.toggle('active')
   if (!document.querySelector('.active')) {
-    let cur = document.querySelector('.current')
-    if (cur) {
-      cur.children('.project-container').classList.toggle('hide')
-      cur.classList.removeClass('current')
-    }
+    flushCurrent()
   }
   e.stopPropagation()
 }
 
+// Open project dropdown      TODO: lazy-loading
+let projectDropdown = document.getElementsByClassName('project-dropdown')
+Array.from(projectDropdown).forEach(e =>
+  e.addEventListener('click', dropDown, false)
+)
 
 /*
-* Portfolio page project views
-* TODO: lazy-loading
+  dropDown is an event listener function that takes a project and
+  makes text content viewable; if carousel is available, function also focuses
+  the first image and selects the first span in carousel controls.
 */
-
-
-$(".project-dropdown").on("click", function (e) {
-  e.stopPropagation();
-  $(".current").removeClass("current");
-  var currContainer = $(this).children(".project-container");
-  $(this).addClass("current");
-
-  $(".current").find(".project-container").toggleClass("hide");
-  $(".current").siblings().find(".project-container").addClass("hide");
-
-  if (currContainer.hasClass("hide")) {
-    $(".current").removeClass("current");
-    $(".carousel img").removeClass("opaque");
-    $(".carousel_controls span").removeClass("selected");
-  } else {
-    $(".current").find(".carousel img").first().addClass("opaque");
-    $(".current").find(".carousel_controls span").first().addClass("selected");
+function dropDown(e) {
+  if (!this.classList.contains('current') )
+    flushCurrent()
+  this.classList.toggle('current')
+  let projectContainer = this.querySelector('.project-container')
+  if (projectContainer.querySelector('.carousel')) {
+    projectContainer.querySelector('img').classList.add('opaque')
+    projectContainer.querySelector('span').classList.add('selected')
   }
-});
+  e.stopPropagation()
+}
 
 /*
-*  show go-icon on hover
-*  TODO: affix go-icon on current container
+    flushCurrent is a utility function that removes all selected settings
+    from the project-dropdown labeled as 'current'
 */
-$(".project-dropdown").hover(function(){
-    $(this).find(".go-icon").css("visibility", "visible");
-}, function() {
-    $(this).find(".go-icon").css("visibility", "hidden");
-});
 
-// image carousel jQuery
-$(".carousel_controls").on("click", "span", function(e) {
-  e.stopPropagation();
-$(".carousel img").removeClass("opaque");
+function flushCurrent() {
+  let current = document.querySelector('.current') || undefined
+  if (current) current.classList.remove('current')
+  if (current && current.querySelector('.opaque')) {
+    current.querySelector('.opaque').classList.remove('opaque')
+    current.querySelector('.selected').classList.remove('selected')
+  }
+  // opaque.classList.remove('opaque')
+}
 
-var newImage = $(this).index();
-console.log(newImage);
 
-var displayed = $(".current").find(".carousel img").eq(newImage);
+let carousel = document.querySelectorAll('.carousel_controls span')
+Array.from(carousel)
+  .forEach(e => e.addEventListener('click', controls, false))
 
-displayed.addClass("opaque");
-
-$(".carousel_controls span").removeClass("selected");
-$(this).addClass("selected");
-});
+function controls(e) {
+  if (!e.target.classList.contains('selected')) {
+    let carousel = e.target.parentElement.previousElementSibling // select carousel
+    let controls = e.target.parentElement                       // select controls
+    let index = e.target.textContent - 1
+    carousel.querySelector('.opaque').classList.remove('opaque')
+    controls.querySelector('.selected').classList.remove('selected')
+    e.target.classList.add('selected')
+    carousel.children[index].classList.add('opaque')
+  }
+  e.stopPropagation()
+}
