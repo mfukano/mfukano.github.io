@@ -1,36 +1,37 @@
-// Open profile quarter for more information
-$(document).on("click",".box",function(e){
-  e.stopPropagation();
-  $(this).toggleClass("active");
-  if ($(".active").length == 0) {
-    console.log("'current' length: " + $(".current").length);
-    console.log("no active");
-    $(".current").find(".project-container").toggleClass("hide");
-    $(".current").removeClass("current");
-  }
-});
+// // Open profile quarter for more information
+let box = document.getElementsByClassName('box')
+Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
 
-// Shifts the title to a readable, unobtrusive position
-$(".title").parent().hasClass("active", function(){
-  $(this).toggleClass("active");
-});
+function activateBox(e) {
+  this.classList.toggle('active')
+  this.firstElementChild.classList.toggle('active')
+  if (!document.querySelector('.active')) {
+    let cur = document.querySelector('.current')
+    if (cur) {
+      cur.children('.project-container').classList.toggle('hide')
+      cur.classList.removeClass('current')
+    }
+  }
+  e.stopPropagation()
+}
 
 
 /*
 * Portfolio page project views
 * TODO: lazy-loading
 */
+
+
 $(".project-dropdown").on("click", function (e) {
   e.stopPropagation();
   $(".current").removeClass("current");
   var currContainer = $(this).children(".project-container");
   $(this).addClass("current");
-    
+
   $(".current").find(".project-container").toggleClass("hide");
   $(".current").siblings().find(".project-container").addClass("hide");
 
   if (currContainer.hasClass("hide")) {
-    $(".hover").removeClass("hover");
     $(".current").removeClass("current");
     $(".carousel img").removeClass("opaque");
     $(".carousel_controls span").removeClass("selected");
@@ -38,26 +39,9 @@ $(".project-dropdown").on("click", function (e) {
     $(".current").find(".carousel img").first().addClass("opaque");
     $(".current").find(".carousel_controls span").first().addClass("selected");
   }
-
-    $(".current").addClass("hover");
-    $(".current").find("*").addClass("hover");
-
-    $(".current").mouseover(function() {
-      $(".current").addClass("hover");
-      $(".current").find("*").addClass("hover");
-    });
-    $(".current").mouseleave(function(){
-      $(".current").removeClass("hover");
-      $(".current").find("*").removeClass("hover");
-    });
-    $(".project-dropdown").not(".current").mouseover(function(){
-      $(".current").removeClass("hover");
-      $(".current").find("*").removeClass("hover");
-  }); 
-
 });
 
-/* 
+/*
 *  show go-icon on hover
 *  TODO: affix go-icon on current container
 */
