@@ -369,10 +369,6 @@ li {
   display: none;
 }
 
-.current .project-container {
-  display: block;
-}
-
 /* projects menu */
 .project-dropdown:hover, .project-dropdown:hover * {
   background: #407899;
@@ -387,6 +383,10 @@ li {
 .current {
   display: block;
   background-color: #fff;
+}
+
+.current .project-container {
+  display: block;
 }
 
 .current .go-icon {
@@ -418,45 +418,6 @@ p.carousel_controls {
 
 .carousel_controls .selected {
   color: #72b6ea;
-}
-
-/* MEDIA QUERIES */
-
-/* Media queries for projects section */
-@media only screen and (orientation: portrait) {
-  .carousel img {
-    max-width: 90%;
-  }
-}
-
-/* Media queries by project */
-
-/*
-  JTT project box sizing begins here */
-@media screen and (min-width: 990px) {
-  p.carousel_controls {
-    height: 35px;
-  }
-  .carousel_controls span {
-    float: none;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  p.carousel_controls {
-    height: inherit;
-  }
-  .carousel_controls span {
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (max-width: 766px){
-  p.carousel_controls {
-    //height: 120px;
-  }
 }
 
 .carousel {
@@ -502,6 +463,45 @@ div.shadow {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Media queries for projects section */
+@media only screen and (orientation: portrait) {
+  .carousel img {
+    max-width: 90%;
+  }
+}
+
+/* Media queries by project */
+
+/*
+  JTT project box sizing begins here */
+@media screen and (min-width: 990px) {
+  p.carousel_controls {
+    height: 35px;
+  }
+  .carousel_controls span {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  p.carousel_controls {
+    height: inherit;
+  }
+  .carousel_controls span {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 766px){
+  p.carousel_controls {
+    //height: 120px;
+  }
 }
 
 @media screen and (max-width: 400px){
