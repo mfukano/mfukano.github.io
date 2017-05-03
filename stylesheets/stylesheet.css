@@ -72,6 +72,10 @@ h3 {
   letter-spacing: 1px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 p, li, em {
   font-size: 18px;
   letter-spacing: 0.6px;
@@ -81,9 +85,9 @@ p, li, em {
 }
 
 ul {
-  list-style: none;
+  list-style: circle;
   -webkit-padding-start: 0px;
-  padding: 0;
+  padding: 0 0 0 6px;
   margin: 0;
   line-height: 18px;
 }
@@ -465,6 +469,14 @@ div.shadow {
   height: auto;
 }
 
+.hire-blurb {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+
+
 /* MEDIA QUERIES */
 
 /* Media queries for projects section */
@@ -519,5 +531,19 @@ div.shadow {
   }
   .active .title.right {
     text-align: left !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .hire-blurb {
+    margin-top: 15%;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  .hire-blurb {
+    margin-top: 0;
+    width: 90%;
   }
 }
