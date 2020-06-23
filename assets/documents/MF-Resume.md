@@ -44,3 +44,8 @@ _Jan 2017 - May 2017_
 * Implement Angular SAAS deliverable on new and existing client sites
 * Used HTML, CSS, JavaScript knowledge to provide creative strategic solutions to compatibility issues and CMS limitations
 * Built sites for newly-signed merchants
+
+## Education
+
+__BSc in Computer Science__
+__University of California, Santa Cruz (2011 - 2015)__
