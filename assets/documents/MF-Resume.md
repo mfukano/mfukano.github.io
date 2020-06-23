@@ -16,14 +16,12 @@ I'm passionate about clean code, good engineering practices, and learning new te
 ## Experience
 ### ironSource
 __Integration Engineering Team Lead__
-
 _Nov 2019 - Present_
 * Lead a team of 3 integration engineers to handle all client production issues
 * Cultivate environment of strong team collaboration and professional growth opportunities
 * Continue to perform related IC tasks, focusing on priority publishers and P0 issues
 
 __Integration Engineer__
-
 _Nov 2018 - Nov 2019_
 
 * Diagnose complex integration or product stability / runtime issues
@@ -33,7 +31,6 @@ _Nov 2018 - Nov 2019_
 ### Pinterest
 
 __Partner Integration Engineer__
-
 _Jun 2017 - Oct 2018_
 * Troubleshoot API issues, issue escalation and documentation updates, and general API partner integration support
 * Help scope new features from partner-facing perspective
@@ -43,7 +40,6 @@ _Jun 2017 - Oct 2018_
 ### Zozi (defunct)
 
 __Implementation Engineer__
-
 _Jan 2017 - May 2017_
 * Implement Angular SAAS deliverable on new and existing client sites
 * Used HTML, CSS, JavaScript knowledge to provide creative strategic solutions to compatibility issues and CMS limitations
