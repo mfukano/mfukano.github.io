@@ -6,9 +6,9 @@ I'm passionate about clean code, good engineering practices, and learning new te
 
 
 ## Skills 
-| Usage | Skills |
+| Usage | Tech |
 | :------ | :----------------------------| 
-| Languages | JavaScript, Java, Python, Swift |
+| Languages | JavaScript, Java, Python |
 | Devtools | Android Studio, XCode, Git, Docker, Heroku |
 | Notable Libraries | Angular, React, Node, Express |
 
@@ -27,6 +27,7 @@ _Nov 2018 - Nov 2019_
 * Diagnose complex integration or product stability / runtime issues
 * Conceptualize and execute on internal tooling gaps for team empowerment
 * Bridge technical communication of satellite office for global company
+* Added internal MEAN-based tooling to improve team workflows
 
 ### Pinterest
 
