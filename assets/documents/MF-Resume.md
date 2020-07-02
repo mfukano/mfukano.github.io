@@ -14,7 +14,7 @@ I'm passionate about clean code, good engineering practices, and learning new te
 
 
 ## Experience
-### ironSource
+### <ins>ironSource</ins>
 __Integration Engineering Team Lead__
 _Nov 2019 - Present_
 * Lead a team of 3 integration engineers to handle all client production issues
@@ -29,7 +29,7 @@ _Nov 2018 - Nov 2019_
 * Bridge technical communication of satellite office for global company
 * Added internal tooling with Express and Node to improve team workflows
 
-### Pinterest
+### <ins>Pinterest</ins>
 
 __Partner Integration Engineer__
 _Jun 2017 - Oct 2018_
@@ -38,7 +38,7 @@ _Jun 2017 - Oct 2018_
 * Uncover use cases and communicate client needs to engineering, helping to provide smoother implementations between partners and API consumers
 * Create internal polling utilities to understand and scope breadth of impact for reporting outages
 
-### Zozi (defunct)
+### <ins>Zozi (defunct)</ins>
 
 __Implementation Engineer__
 _Jan 2017 - May 2017_
