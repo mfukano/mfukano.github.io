@@ -1,6 +1,6 @@
 # Objective
 
-I really want to build cool shit at a company I care about. For so long, I've worked at adtech companies that feel like they're anti-consumer rather than good for the consumer, and so hyper-focused on revenue that the experience of both clients and users comes dead last.
+I want to contribute to meaningful projects at a company I care about. For so long, I've worked at adtech companies that feel like they're anti-consumer rather than good for the consumer, and so hyper-focused on revenue that the experience of both clients and users comes dead last.
 
 I'm passionate about clean code, good engineering practices, and learning new technologies and strategies to achieve these goals.
 
@@ -10,7 +10,7 @@ I'm passionate about clean code, good engineering practices, and learning new te
 | :------ | :----------------------------| 
 | Languages | JavaScript, Java, Python, Swift |
 | Devtools | Android Studio, XCode, Git, Docker, Heroku |
-| Notable Libraries | Angular, React, Vue, Node, Express |
+| Notable Libraries | Angular, React, Node, Express |
 
 
 ## Experience
