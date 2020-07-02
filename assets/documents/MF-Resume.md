@@ -27,7 +27,7 @@ _Nov 2018 - Nov 2019_
 * Diagnose complex integration or product stability / runtime issues
 * Conceptualize and execute on internal tooling gaps for team empowerment
 * Bridge technical communication of satellite office for global company
-* Added internal MEAN-based tooling to improve team workflows
+* Added internal tooling with Express and Node to improve team workflows
 
 ### Pinterest
 
