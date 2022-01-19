@@ -1,34 +1,70 @@
 Mat Fukano
-matfukano.com  |  github.com/mfukano  fukano.mat@gmail.com  |  925.286.1444
-Objective
-To find a position where I can use my skills and passion as a front-end developer to implement functional elements and interactions, and enhance the overall user experience.
+----------
+matfukano.com  |  github.com/mfukano  | fukano dot mat at gmail dot com
 
-Education
-BSc in Computer Science 
-University of California, Santa Cruz (2011 — 2015)
-Notable Classes: Software Engineering, Mobile Development, Web Design
+-------------
+  Objective
+-------------
 
-Technical Skills
-Languages: JavaScript, Ruby, CSS, HTML
-Frameworks & Libraries: SCSS, Rails, Bootstrap, jQuery, AJAX
-Data & DB: JSON, XML, Postgres
-Tools: npm, git, Atom, GIMP
+I want to contribute to meaningful projects at a company I care about. For so long, I've worked at adtech companies that feel like they're anti-consumer rather than good for the consumer, and so hyper-focused on revenue that the experience of both clients and users comes dead last.
 
-Strengths
-Capable of translating and enhancing website wireframes to clean code
-Communicates well to benchmark needs of client with progress of site
-Cross-browser and responsive development experience
-Demonstrated ability to learn skills quickly
+I'm passionate about clean code, good engineering practices, and learning new technologies and strategies to achieve these goals.
 
-Experience
-Pocket Mom (2016) — Front-end Developer (contract)
-Responsive landing page for productivity app built with jQuery / JS / HTML / CSS
+----------
+  Skills 
+----------
+| Usage		   | Tech 				      |
+| Languages 	   | JavaScript, Java, Python 		      |
+| Devtools 	   | Android Studio, XCode, Git, Docker, Heroku |
+| Notable Libraries | Angular, React, Node, Express 	      |
 
-Projects
-Better Threads (ongoing) — Full-stack Developer
-Fair-trade clothing company database utilizing Sass / Rails / Postgres
-matfukano.com (2016) — Front-end Developer
-Responsive personal website, built with jQuery / JS / HTML / CSS
-Noding Bat (2015) — JavaScript, Bootstrap, CSS, HTML contributions
-Helped develop open source JavaScript-based Coding Bat clone
-Pull requests for cross-browser issues, button functionality, styling
+--------------
+  Experience  
+--------------
+
+Sophonaut
+Software Engineer
+2022 - present
+- Early engineer in small company focused on a sustainable behavior project
+
+-- ironSource --
+
+Integration Engineering Team Lead
+Nov 2019 - January 2022
+- Lead a team of 3 integration engineers to handle all client production issues
+- Cultivate environment of strong team collaboration and professional growth opportunities
+- Continue to perform related IC tasks, focusing on priority publishers and P0 issues
+
+Integration Engineer
+Nov 2018 - Nov 2019
+
+- Diagnose complex integration or product stability / runtime issues
+- Conceptualize and execute on internal tooling gaps for team empowerment
+- Bridge technical communication of satellite office for global company
+- Added internal tooling with Express and Node to improve team workflows
+
+-- Pinterest --
+
+Partner Integration Engineer
+Jun 2017 - Oct 2018
+- Troubleshoot API issues, issue escalation and documentation updates, and general API partner integration support
+- Help scope new features from partner-facing perspective
+- Uncover use cases and communicate client needs to engineering, helping to provide smoother implementations between partners and API consumers
+- Create internal polling utilities to understand and scope breadth of impact for reporting outages
+
+-- Zozi (defunct) --
+
+Implementation Engineer
+Jan 2017 - May 2017
+- Implement Angular SAAS deliverable on new and existing client sites
+- Used HTML, CSS, JavaScript knowledge to provide creative strategic solutions to compatibility issues and CMS limitations
+- Built sites for newly-signed merchants
+
+-------------
+  Education
+-------------
+
+BSc in Computer Science
+University of California, Santa Cruz (2011 - 2015)
+
+

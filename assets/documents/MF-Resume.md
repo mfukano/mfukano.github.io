@@ -14,9 +14,14 @@ I'm passionate about clean code, good engineering practices, and learning new te
 
 
 ## Experience
+### <ins>Sophonaut</ins>
+__Software Engineer__
+_2022 - present_
+* Early engineer in small company focused on a sustainable behavior project
+
 ### <ins>ironSource</ins>
 __Integration Engineering Team Lead__
-_Nov 2019 - Present_
+_Nov 2019 - January 2022_
 * Lead a team of 3 integration engineers to handle all client production issues
 * Cultivate environment of strong team collaboration and professional growth opportunities
 * Continue to perform related IC tasks, focusing on priority publishers and P0 issues
