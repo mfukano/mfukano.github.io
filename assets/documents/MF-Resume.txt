@@ -15,8 +15,8 @@ I'm passionate about clean code, good engineering practices, and learning new te
 ----------
 | Usage		   | Tech 				      |
 | Languages 	   | JavaScript, Java, Python 		      |
-| Devtools 	   | Android Studio, XCode, Git, Docker, Heroku |
-| Notable Libraries | Angular, React, Node, Express 	      |
+| Devtools 	   | AWS, Android Studio, XCode, Git, Docker, Heroku |
+| Notable Libraries | Next.js, React, Node, Express 	      |
 
 --------------
   Experience  
@@ -24,16 +24,20 @@ I'm passionate about clean code, good engineering practices, and learning new te
 
 Sophonaut
 Software Engineer
-2022 - present
-- Early engineer in small company focused on a sustainable behavior project
+Jan 2022 - Jan 2023
+- Improved functionality of existing Next.js Create-React-App fork
+- Led ground-up reimplementation of app with AWS Amplify backend and Next.js SSR
+- Engineered back-end business functionality — results calculation, user friend-list management, user comparison
+- Vastly improved accessibility of data resulting in 10x lower pageload
+- Built mobile-first front-end with React utilizing Amplify GraphQL data queries
 
 -- ironSource --
 
 Integration Engineering Team Lead
-Nov 2019 - January 2022
-- Lead a team of 3 integration engineers to handle all client production issues
+Nov 2019 - Jan 2022
+- Lead a team of 4 integration engineers to handle all client production issues
 - Cultivate environment of strong team collaboration and professional growth opportunities
-- Continue to perform related IC tasks, focusing on priority publishers and P0 issues
+- Work with high-value clients to find best-fit solution to their specific business needs
 
 Integration Engineer
 Nov 2018 - Nov 2019
