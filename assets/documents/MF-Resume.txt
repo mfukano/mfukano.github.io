@@ -33,9 +33,9 @@ Jan 2022 - Jan 2023
 
 -- ironSource --
 
-Integration Engineering Team Lead
+Technical Solutions Engineering Team Lead
 Nov 2019 - Jan 2022
-- Lead a team of 4 integration engineers to handle all client production issues
+- Lead a team of 4 solutions engineers to handle all US client production issues
 - Cultivate environment of strong team collaboration and professional growth opportunities
 - Work with high-value clients to find best-fit solution to their specific business needs
 

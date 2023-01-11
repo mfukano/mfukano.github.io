@@ -24,9 +24,9 @@ _Jan 2022 - Jan 2023_
 * Built mobile-first front-end with React utilizing Amplify GraphQL data queries
 
 ### <ins>ironSource</ins>
-__Integration Engineering Team Lead__
+__Technical Solutions Engineering Team Lead__
 _Nov 2019 - Jan 2022_
-* Lead a team of 4 integration engineers to handle all client production issues
+* Lead a team of 4 solutions engineers to handle all US client production issues
 * Cultivate environment of strong team collaboration and professional growth opportunities
 * Work with high-value clients to find best-fit solution to their specific business needs
 
