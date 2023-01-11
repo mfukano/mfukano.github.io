@@ -16,12 +16,16 @@ I'm passionate about clean code, good engineering practices, and learning new te
 ## Experience
 ### <ins>Sophonaut</ins>
 __Software Engineer__
-_2022 - present_
-* Early engineer in small company focused on a sustainable behavior project
+_Jan 2022 - Jan 2023_
+* Improved functionality of existing Next.js Create-React-App fork
+* Led ground-up reimplementation of app with AWS Amplify backend and Next.js SSR
+* Engineered back-end business functionality — results calculation, user friend-list management, user comparison
+* Vastly improved accessibility of data resulting in 10x lower pageload
+* Built mobile-first front-end with React utilizing Amplify GraphQL data queries
 
 ### <ins>ironSource</ins>
 __Integration Engineering Team Lead__
-_Nov 2019 - January 2022_
+_Nov 2019 - Jan 2022_
 * Lead a team of 3 integration engineers to handle all client production issues
 * Cultivate environment of strong team collaboration and professional growth opportunities
 * Continue to perform related IC tasks, focusing on priority publishers and P0 issues
