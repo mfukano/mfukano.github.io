@@ -12,7 +12,14 @@ morphing into a sandbox design experiment for my HTML/CSS
     <link rel="stylesheet" href="./stylesheets/stylesheet.css" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('3WZiXBeSlANX9BWzV')
+        })
+    </script>
 </head>
 
 <body class="preload">
@@ -40,20 +47,37 @@ morphing into a sandbox design experiment for my HTML/CSS
 
                 <div class="separator"></div>
 
-                <h2>Experience</h2>
+                <h2>Work</h2>
 
                 <div class="project-dropdown">
                     <div class="project-title">
-                        <a class="project-link" href="#">Pocket Mom</a>
-                        <a href="http://www.pocketmom.io">
+                        <a class="project-link" href="#">Sophonaut</a>
+                        <a href="https://app.sophonaut.com">
                             <img src="assets/svg/play-button.svg" alt="goto-page" class="go-icon"/></a>
                     </div>
                     <div class="project-container">
                         <p class="project-description">
-                            I built the landing page for Pocket Mom, an upcoming productivity application.
+                            <div class="carousel" class="shadow">
+                                <img class='opaque' src="assets/images/sophonaut_2.jpg" />
+                                <img src="assets/images/sophonaut_2.jpg" />
+                                <img src="assets/images/sophonaut_3.jpg" />
+                                <img src="assets/images/sophonaut_4.jpg" />
+                            </div>
+                            <p class="carousel_controls">
+                                <span class="selected">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                            </p>
+                            <p>
+                                I spent nearly all of 2022 working on two versions of an application for Sophonaut. Users take a personality assessment, 
+                                then receive meaningful personality results which they can use to make lasting improvements to aspects of their lives like work, friendships and relationships.
+                            </p>
                         </p>
                     </div>
                 </div>
+
+                <div class="separator"></div>
 
                 <h2>Personal</h2>
 
@@ -76,30 +100,6 @@ morphing into a sandbox design experiment for my HTML/CSS
                             A responsive Wikipedia viewer; uses API integration from MediaWiki and utilizes mobile
                             Wikipedia links where appropriate. A good study
                             in API calls and DRY code.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-dropdown">
-                    <div class="project-title">
-                        <a class="project-link" href="#">Miyazaki Tribute</a><a
-                            href="http://github.com/mfukano/just-the-tip"><img src="assets/svg/play-button.svg"
-                                                                               alt="goto-page" class="go-icon"/></a>
-                    </div>
-                    <div class="project-container">
-                        <p class="project-description">
-                        <p data-height="400" data-theme-id="light" data-slug-hash="EKrMMB" data-default-tab="result"
-                           data-user="marotafuka" data-embed-version="2" data-preview="true" class="codepen">See the Pen
-                            <a href="http://codepen.io/marotafuka/pen/EKrMMB/">Miyazaki Tribute</a> by Mat Fukano (<a
-                                    href="http://codepen.io/marotafuka">@marotafuka</a>) on <a href="http://codepen.io">CodePen</a>.
-                        </p>
-                        <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
-                        </p>
-                        <p class="project-description">
-                            A simple tribute page inspired by Free Code Camp.
-                            I think this is a great resource and worth walking through for anyone that's trying to break
-                            into modern programming,
-                            or transition into web development.
                         </p>
                     </div>
                 </div>
@@ -148,18 +148,6 @@ morphing into a sandbox design experiment for my HTML/CSS
                 <div class="separator"></div>
 
                 <h2>School Projects</h2>
-
-                <div class="project-dropdown">
-                    <div class="project-title">
-                        <a class="project-link" href="#">Not Zombies</a><a
-                            href="https://github.com/mfukano/Not-Zombies"><img src="assets/svg/play-button.svg"
-                                                                               alt="goto-page" class="go-icon"/></a>
-                    </div>
-                    <div class="project-container">
-                        <p class="project-description">Not Zombies is a survival exploration game prototype by my team
-                            of 5. It was written in Unity and C# and features pixel drawn maps and custom AI.</p>
-                    </div>
-                </div>
 
                 <div class="project-dropdown">
                     <div class="project-title">
@@ -227,7 +215,7 @@ morphing into a sandbox design experiment for my HTML/CSS
         </div>
     </div> <!-- close resume box -->
 
-    <!-- Bottom Left (hobbies) -->
+    <!-- Bottom Left (about me) -->
     <div class="box bottom left">
         <h1 class="title bottom left">about</h1>
         <div class="wrapper">
@@ -241,25 +229,38 @@ morphing into a sandbox design experiment for my HTML/CSS
             </div>
 
             <div class="text-box">
-                <h3>Tech</h3>
+
+                <div class="image-container">
+                    <img src="assets/images/mat1.jpg" alt="beard-man" class="profile-image">
+                </div>
+                <h3>Hi there</h3>
                 <p>
-                    I love to learn, especially when it comes to new technology.
+                    Since you're on this page at all, and also actively decided to read about the page author, thanks for taking the time to read about me!
                 </p>
                 <p>
-                    I've played around with a lot, but the two languages I've fallen for are JavaScript and Ruby.
-                    They're both incredibly elegant, in different ways.
-                    I'm currently split between learning about JS and its frameworks,
-                    and really grasping Ruby (and Rails). Both challenging tasks, but I like to think I'm doing a good
-                    job.
-                    Combine these with a solid grounding in HTML and CSS and you have yourself a web developer!
+                    My name is Mat and I like to make things and problem solve. Here are a few things in life that are important to me:
+                </p>
+
+                <h3>Tech</h3>
+                <p>
+                    I love to learn, especially when it comes to new technology. Currently I'm piecing together a few things for myself, out of a want to learn and a need to fulfill that want:
+                    <ul style="margin-top: 10px;">
+                        <li>Full-stack testing best practices</li>
+                        <li>Re-learning Ruby on Rails</li>
+                        <li>Rust, in general (seems like a really cool language)</li>
+                    </ul>
+                </p>
+
+                <h3>Sustainability</h3>
+                <p>
+                    I believe resource management is one of the worst issues we face today. 
+                    There's an unfathomable amount of waste in the world and at large and small levels, we must strive to be better. 
+                    Even if it's a relatively small impact, I do my best to make sustainable choices every day.
                 </p>
 
                 <h3>Music</h3>
                 <p>
-                    My second love in life is music. I've been involved with group music-making for years,
-                    and have played piano, clarinet, bass clarinet, alto/tenor/baritone sax,
-                    bassoon, contrabassoon, along with guitar and bass guitar in my spare time.
-                    I'm nothing if not well-rounded.
+                    My second love in life is music. I played a variety of instruments in the past and was previously deeply passionate about group music-making.
                 </p>
                 <p>
                     I developed an interest in electronic music at university.
@@ -267,11 +268,25 @@ morphing into a sandbox design experiment for my HTML/CSS
                     my computer.
                     I love the freedom to draft and create ideas, and allow people to enjoy my creations.
                 </p>
-                <h3>Hobbies</h3>
+                
+                <h3>Cooking</h3>
                 <p>
-                    When I'm not pursuing either of my two incredibly time-consuming passions,
-                    I like to cook, rock-climb, and get outdoors a la hiking or camping.
+                    Part of my enjoyment of making things manifests itself as cooking — I'm a bit of a neurotic perfectionist in this regard. I <em>may</em> make the best french fries I've ever had, and I've had a <b>lot</b> of french fries.
                 </p>
+                
+                <h3>Climbing</h3>
+                <p>
+                    Problem-solving often manifests as rock-climbing for me! It's an awesome way to use your brain and your body to tackle complex problems. Currently I'm working to send every 5.12a on toprope and V5 on boulder.
+                </p>
+
+                <h3>Kuro</h3>
+                <p>
+                    You'll often find me spending quality time with my weird mutt, Kurogoma.
+                </p>
+                <br>
+                <div class="image-container">
+                    <img src="assets/images/mat+kuro.jpg" alt="man-with-dog" class="profile-image">
+                </div>
             </div>
 
             <!-- Icon Footer -->
@@ -300,11 +315,35 @@ morphing into a sandbox design experiment for my HTML/CSS
 
             <div class="text-box">
                 <p class="hire-blurb">
-                    I'm not currently looking for work -- I just joined onto a project that
-		    I'm very excited about and putting as much time into that as I can.
-  	            That said, if you have any cool projects that you think I'd be helpful on
-		    or you need recommendations for people I trust, feel free to reach out!
+                    I'm starting the search for work once again! <br><br>
+                    I have a year's experience in a small, rapid-iteration startup space doing mostly front-end work with React, but also configuring Next.js on a serverless AWS stack.<br><br>
+                    I have 4 years of experience in technical solutions / integration engineering roles and have experience working with technical points-of-contact at strategic partner companies.<br><br>
+                    I have some experience in leadership roles and working with international teams on a 24-hour cycle.<br><br>
+                    
+                    Feel free to get in touch if the above sounds useful and relevant to you.
                 </p>
+
+                    <div class="email-form">
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <label>Name:</label>
+                            <input type="text" name="user_name"><br>
+                            <label>Email:</label>
+                            <input type="email" name="user_email"><br>
+                            <label>Message</label><br>
+                            <textarea name="message" id="" cols="30" rows="10"></textarea><br>
+
+                            <div class="recaptcha">
+                                <form action="?" method="POST">
+                                    <div class="g-recaptcha" data-sitekey="6LdzcFYkAAAAALZrgKOjqEGGMhJUdr-ucbNcO4nr"></div>
+                                    <br/>
+                                    <input type="submit" value="Submit" style="width: 50%;">
+                                </form><br><br>
+                            </div>
+
+                            <input type="submit" value="Send" style="width: 50%;"/>
+                        </form>
+                    </div>
             </div>
 
             <!-- Icon Footer -->
