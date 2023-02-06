@@ -1,8 +1,26 @@
+window.onload = function() {
+  console.log(`in window.onload function from app.js`)
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault()
+    this.contact_number.value = Math.random() * 100000 | 0;
+    emailjs.sendForm('contact_service', 'contact_form', this)
+      .then(function() {
+        console.log('SUCCESS!')
+      }, function(error) {
+        console.log(`FAILED WITH ERROR: ${error}`, error)
+      })
+  })
+}
+
 // Open page quadrant
 let box = document.getElementsByClassName('box')
 Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
 
 function activateBox(e) {
+  console.log(e.target.tagName)
+  if (['INPUT', 'TEXTAREA', 'A', 'BUTTON'].some(name => name === e.target.tagName) || e.target.class === 'email-form') {
+    return
+  }
   this.classList.toggle('active')
   this.firstElementChild.classList.toggle('active')
   if (!document.querySelector('.active')) {
