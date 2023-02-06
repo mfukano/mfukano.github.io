@@ -6,7 +6,19 @@
 // Register contact form event listeners in onload
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault()
+    event.preventDefault()
+    const userName = this.user_name.value
+    const userEmail = this.user_email.value
+    const formMessage = this.message.value
+
+    let {success, message} = validateEmailFormParams(userName, userEmail, formMessage)
+
+    if (!success) {
+      // window.alert(`Something went wrong with the form: 
+      // ${message}`)
+      renderError(message)
+    } else {
+      renderMessage(message)
       this.contact_number.value = Math.random() * 100000 | 0;
       emailjs.sendForm('contact_service_f16b3nt', 'personalsite_contactform', this)
       .then(function() {
@@ -16,8 +28,9 @@ window.onload = function() {
       }, function(error) {
           const errorMessage = `FAILED WITH ERROR: ${error}` 
           console.log(errorMessage)
-          renderMessage(errorMessage)
+          renderError(errorMessage)
       })
+    }
   })
 }
 
@@ -93,9 +106,41 @@ function controls(e) {
   e.stopPropagation()
 }
 
-function renderMessage(message) {
+function renderError(message) {
   let error = document.getElementById('error')
-  error.style.visibility = "visible"
+  error.textContent = message
+  error.style.display = "flex"
 
-  setTimeout(() => { error.style.visibility = 'hidden' }, 3000)
+  setTimeout(() => { error.style.display = 'none' }, 3000)
+}
+function renderMessage(message) {
+  let msg = document.getElementById('message')
+  msg.textContent = message
+  msg.style.display = "flex"
+
+  setTimeout(() => { error.style.display = 'none' }, 3000)
+}
+
+function validateEmailFormParams(name, email, body) {
+  let success = true
+  let message = ""
+
+  if (name.length < 4 || !name.includes(' ')) {
+    success = false
+    message = "Please include your full name if you want to get in touch with me!"
+    return {success, message}
+  }
+  if (!email.match(/\S+@\S+\.\S+/)) {
+    success = false
+    message = "Please input a properly formatted email."
+    return {success, message}
+  }
+  if (body.length < 30) {
+    success = false
+    message = "Please send more detail about why you want to get in touch with me!"
+    return {success, message}
+  }
+  
+  message = "Form was validated successfully, sending email..."
+  return {success, message}
 }

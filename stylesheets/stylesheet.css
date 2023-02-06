@@ -527,7 +527,35 @@ div.shadow {
   box-shadow: 3px 2px 22px 1px rgba(0,0,0, 0.24)
 }
 #error {
-  visibility: hidden;
+  display: none;
+  background-color: #FA0F36;
+  border: 1px solid #A4031F;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  width: 60%;
+}
+#message {
+  display: none;
+  background-color: #58CA2B;
+  border: 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  width: 60%;
+}
+#error, #message {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -563,6 +591,9 @@ div.shadow {
     padding-right: 20px;
   }
   .email-form form {
+    width: 100%;
+  }
+  #error, #message {
     width: 100%;
   }
 }
