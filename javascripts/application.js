@@ -3,7 +3,7 @@ let box = document.getElementsByClassName('box')
 Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
 
 function activateBox(e) {
-  console.log(e.target.tagName)
+
   if (['INPUT', 'TEXTAREA', 'A', 'BUTTON'].some(name => name === e.target.tagName) || e.target.class === 'email-form') {
     return
   }

@@ -24,7 +24,9 @@ morphing into a sandbox design experiment for my HTML/CSS
         window.onload = function() {
             console.log(`in window.onload function from app.js`)
             document.getElementById('contact-form').addEventListener('submit', function(event) {
+                console.log('clicked submit')
                 event.preventDefault()
+                console.log(`generating contact_number`)
                 this.contact_number.value = Math.random() * 100000 | 0;
                 emailjs.sendForm('contact_service', 'contact_form', this)
                 .then(function() {
