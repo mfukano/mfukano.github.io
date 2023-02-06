@@ -1,3 +1,7 @@
+(function() {
+  emailjs.init('3WZiXBeSlANX9BWzV')
+})
+
 window.onload = function() {
   console.log(`in window.onload function from app.js`)
   document.getElementById('contact-form').addEventListener('submit', function(event) {
