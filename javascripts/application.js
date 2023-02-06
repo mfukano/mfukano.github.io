@@ -5,7 +5,6 @@
 
 // Register contact form event listeners in onload
 window.onload = function() {
-  console.log(`in window.onload function from app.js`)
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       console.log('clicked submit')
       event.preventDefault()
