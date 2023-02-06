@@ -221,6 +221,7 @@ li {
   padding-right: 10px;
 }
 .title.right {
+  text-align: left;
   left: 0%;
   right: 100%;
   padding-left: 10px;
@@ -300,6 +301,7 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 32px;
   width: 100%;
   text-align: center;
   max-width: 800px;
@@ -472,9 +474,41 @@ div.shadow {
 .hire-blurb {
   width: 60%;
   margin: 0 auto;
-  margin-top: 25%;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-image {
+  height: 400px;
+  border-radius: 25px;
+}
+
+.email-form {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.email-form form {
+  width: 65%;
+}
+.email-form input, .email-form textarea {
+  width: 100%;
+}
+
+.recaptcha {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
 
 /* MEDIA QUERIES */
@@ -508,6 +542,9 @@ div.shadow {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .email-form form {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 766px){
@@ -518,10 +555,7 @@ div.shadow {
 
 @media screen and (max-width: 400px){
   .title {
-    width: 100%;
-    padding: 0 !important;
     font-size: 250%;
-    line-height: 1.5em;
   }
 
   .active .title.left {
