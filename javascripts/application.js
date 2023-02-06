@@ -1,20 +1,22 @@
 // Init EmailJS in IIFE on pageload
 (function() {
   emailjs.init('3WZiXBeSlANX9BWzV')
-})
+})()
 
 // Register contact form event listeners in onload
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-      console.log('clicked submit')
       event.preventDefault()
-      console.log(`generating contact_number`)
       this.contact_number.value = Math.random() * 100000 | 0;
       emailjs.sendForm('contact_service_f16b3nt', 'personalsite_contactform', this)
       .then(function() {
-          console.log('SUCCESS!')
+          const message = "Sent email successfully"
+          console.log(message)
+          renderMessage(message)
       }, function(error) {
-          console.log(`FAILED WITH ERROR: ${error}`, error)
+          const errorMessage = `FAILED WITH ERROR: ${error}` 
+          console.log(errorMessage)
+          renderMessage(errorMessage)
       })
   })
 }
@@ -89,4 +91,11 @@ function controls(e) {
     carousel.children[index].classList.add('opaque')
   }
   e.stopPropagation()
+}
+
+function renderMessage(message) {
+  let error = document.getElementById('error')
+  error.style.visibility = "visible"
+
+  setTimeout(() => { error.style.visibility = 'hidden' }, 3000)
 }
