@@ -1,9 +1,30 @@
+// Init EmailJS in IIFE on pageload
+(function() {
+  emailjs.init('3WZiXBeSlANX9BWzV')
+})
+
+// Register contact form event listeners in onload
+window.onload = function() {
+  console.log(`in window.onload function from app.js`)
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      console.log('clicked submit')
+      event.preventDefault()
+      console.log(`generating contact_number`)
+      this.contact_number.value = Math.random() * 100000 | 0;
+      emailjs.sendForm('contact_service_f16b3nt', 'personalsite_contactform', this)
+      .then(function() {
+          console.log('SUCCESS!')
+      }, function(error) {
+          console.log(`FAILED WITH ERROR: ${error}`, error)
+      })
+  })
+}
+
 // Open page quadrant
 let box = document.getElementsByClassName('box')
 Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
 
 function activateBox(e) {
-
   if (['INPUT', 'TEXTAREA', 'A', 'BUTTON'].some(name => name === e.target.tagName) || e.target.class === 'email-form') {
     return
   }

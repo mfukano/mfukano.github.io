@@ -15,28 +15,6 @@ morphing into a sandbox design experiment for my HTML/CSS
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('3WZiXBeSlANX9BWzV')
-        })
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            console.log(`in window.onload function from app.js`)
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                console.log('clicked submit')
-                event.preventDefault()
-                console.log(`generating contact_number`)
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                .then(function() {
-                    console.log('SUCCESS!')
-                }, function(error) {
-                    console.log(`FAILED WITH ERROR: ${error}`, error)
-                })
-            })
-        }
-    </script>
 </head>
 
 <body class="preload">
@@ -354,7 +332,6 @@ morphing into a sandbox design experiment for my HTML/CSS
                                 <form action="?" method="POST">
                                     <div class="g-recaptcha" data-sitekey="6LdzcFYkAAAAALZrgKOjqEGGMhJUdr-ucbNcO4nr"></div>
                                     <br/>
-                                    <!-- <input type="submit" value="Submit" style="width: 50%;"> -->
                                 </form>
                             </div>
 
