@@ -51,9 +51,9 @@ h1, h2 {
 
 h1 {
   font-style: capitalize;
-  font-size: 3em;
+  font-size: 6em;
   letter-spacing: 3px;
-  font-kerning: none;
+  font-kerning: auto;
   width: auto;
   line-height: 1;
 }
@@ -74,6 +74,9 @@ h3 {
 
 h4 {
   font-size: 20px;
+}
+.icons a {
+  text-decoration: none;
 }
 
 p, li, em {
@@ -112,21 +115,26 @@ li {
   height: 50%;
   transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+/* .box:hover .title span {
+  background-color: #ddd;
+} */
 
 .box.active {
   position: relative;
   width: 100%;
   height: 100%;
   z-index: 3;
-  overflow: scroll;
+  overflow: visible;
   background: white;
   transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1);
-
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   }
 
-.active:hover {
+/* .active:hover {
   overflow-y: auto;
-}
+} */
 
 .box.left {
   left: 0;
@@ -153,12 +161,12 @@ li {
   max-height: 0;
   opacity: 0;
   width: 80%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
   padding: 0;
-  display: block;
-  overflow: auto;
-  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
+  height: 100%;
   transition: opacity 100ms cubic-bezier(0.19, 1, 0.22, 1), visibility 0s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -186,8 +194,8 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 .divider .vertical {
   position: relative;
@@ -218,26 +226,30 @@ li {
   text-align: right;
   right: 0%;
   left: 0%;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 .title.right {
   text-align: left;
   left: 0%;
-  right: 100%;
-  padding-left: 10px;
+  right: 100% - 30px;
 }
 .title.top {
   position: relative;
   transform: translateY(-100%);
   bottom: 0%;
   top: 100%;
+  padding-bottom: 30px;
 }
 .title.bottom {
   top: 0%;
   bottom: 100%;
+  padding-top: 30px;
 }
-.title.bottom.right {
-  padding-left: 10px;
+.title.right {
+  padding-left: 30px;
+}
+.title-wrapper {
+  width: auto;
 }
 
 /* Active Header */
@@ -472,8 +484,7 @@ div.shadow {
 }
 
 .hire-blurb {
-  width: 60%;
-  margin: 0 auto;
+
 }
 
 .image-container {
@@ -582,6 +593,9 @@ div.shadow {
 }
 
 @media screen and (max-width: 990px) {
+  h1 {
+    font-size: 300%;
+  }
   p.carousel_controls {
     height: inherit;
   }
