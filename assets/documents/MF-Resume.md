@@ -8,18 +8,18 @@ I'm passionate about clean code, good engineering practices, and learning new te
 ## Skills 
 
 ### Professional Experience With:
-| Usage | Tech |
-| :------ | :----------------------------| 
-| Languages | JavaScript, Java, Python |
-| Devtools | AWS, Android Studio, XCode, Git |
-| Notable Libraries | Next.js, React, Node, Express |
+| Usage             | Tech                                         |
+| :---------------- | :--------------------------------------------| 
+| Languages         | JavaScript, Java, Python                     |
+| Devtools          | AWS, Android Studio, XCode, Git              |
+| Notable Libraries | Next.js, React, Node, Express                |
 
 ### Limited Experience With / Some Exposure To:
-| Usage | Tech |
-| :------ | :----------------------------| 
-| Languages | Java, Python, Ruby, Rust, Swift, Objective-C |
-| Devtools | Docker, MOngoDB, PostgreSQL |
-| Notable Libraries | Rails, Vue |
+| Usage             | Tech                                         |
+| :------           | :--------------------------------------------| 
+| Languages         | Java, Python, Ruby, Rust, Swift, Objective-C |
+| Devtools          | Docker, MOngoDB, PostgreSQL                  |
+| Notable Libraries | Rails, Vue                                   |
 
 ## Experience
 ### <ins>Sophonaut</ins>

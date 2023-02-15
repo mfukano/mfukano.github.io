@@ -1,6 +1,5 @@
 Mat Fukano
-----------
-matfukano.com  |  github.com/mfukano  | fukano dot mat at gmail dot com
+matfukano.com  |  github.com/mfukano  | matfukano+site@gmail.com
 
 -------------
   Objective
@@ -13,16 +12,25 @@ I'm passionate about clean code, good engineering practices, and learning new te
 ----------
   Skills 
 ----------
-| Usage		   | Tech 				      |
-| Languages 	   | JavaScript, Java, Python 		      |
-| Devtools 	   | AWS, Android Studio, XCode, Git, Docker, Heroku |
-| Notable Libraries | Next.js, React, Node, Express 	      |
+Professional Experience With:
+| Usage             | Tech                                         |
+| :---------------- | :--------------------------------------------| 
+| Languages         | JavaScript, Java, Python                     |
+| Devtools          | AWS, Android Studio, XCode, Git              |
+| Notable Libraries | Next.js, React, Node, Express                |
+
+Limited Experience With / Some Exposure To:
+| Usage             | Tech                                         |
+| :------           | :--------------------------------------------| 
+| Languages         | Java, Python, Ruby, Rust, Swift, Objective-C |
+| Devtools          | Docker, MOngoDB, PostgreSQL                  |
+| Notable Libraries | Rails, Vue                                   |
 
 --------------
   Experience  
 --------------
 
-Sophonaut
+-- Sophonaut --
 Software Engineer
 Jan 2022 - Jan 2023
 - Improved functionality of existing Next.js Create-React-App fork
