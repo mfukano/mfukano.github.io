@@ -14,8 +14,6 @@ window.onload = function() {
     let {success, message} = validateEmailFormParams(userName, userEmail, formMessage)
 
     if (!success) {
-      // window.alert(`Something went wrong with the form: 
-      // ${message}`)
       renderError(message)
     } else {
       renderMessage(message)
@@ -36,18 +34,35 @@ window.onload = function() {
 
 // Open page quadrant
 let box = document.getElementsByClassName('box')
-Array.from(box).forEach(e => e.addEventListener('click', activateBox, false))
+Array.from(box).forEach(e => e.addEventListener('click', handleClick(e, 300, activateBox), false))
 
-function activateBox(e) {
-  if (['INPUT', 'TEXTAREA', 'A', 'BUTTON'].some(name => name === e.target.tagName) || e.target.class === 'email-form') {
+function handleClick(el, timeout, callback) {
+  let startTime
+  const mouseDown = () => (startTime = Date.now())
+  const mouseUp = (event) => Date.now() - startTime < timeout && callback(event, el)
+  el.addEventListener("mousedown", mouseDown)
+  el.addEventListener("mouseup", mouseUp)
+
+}
+
+function activateBox(event, el) {
+  if (['INPUT', 'TEXTAREA', 'A', 'BUTTON']
+    .some(name => name === event.target.tagName) 
+    || event.target.class === 'email-form' 
+    // prevent project drop-downs from triggering box close
+    || event.target.classList.contains('project-dropdown')
+    || event.target.classList.contains('project-title')
+    || event.target.classList.contains('project-image-button')
+    ) {
     return
   }
-  this.classList.toggle('active')
-  this.firstElementChild.classList.toggle('active')
+
+  el.classList.toggle('active')
+  el.firstElementChild.classList.toggle('active')
   if (!document.querySelector('.active')) {
     flushCurrent()
   }
-  e.stopPropagation()
+  event.stopPropagation()
 }
 
 // Open project dropdown      TODO: lazy-loading
@@ -62,6 +77,7 @@ Array.from(projectDropdown).forEach(e =>
   the first image and selects the first span in carousel controls.
 */
 function dropDown(e) {
+  console.log(this)
   if (!this.classList.contains('current') )
     flushCurrent()
   this.classList.toggle('current')
@@ -77,7 +93,6 @@ function dropDown(e) {
     flushCurrent is a utility function that removes all selected settings
     from the project-dropdown labeled as 'current'
 */
-
 function flushCurrent() {
   let current = document.querySelector('.current') || undefined
   if (current) current.classList.remove('current')
@@ -85,7 +100,6 @@ function flushCurrent() {
     current.querySelector('.opaque').classList.remove('opaque')
     current.querySelector('.selected').classList.remove('selected')
   }
-  // opaque.classList.remove('opaque')
 }
 
 
