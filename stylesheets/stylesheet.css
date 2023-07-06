@@ -494,6 +494,15 @@ div.shadow {
   width: 100%;
 }
 
+.top {
+  padding-bottom: 10px;
+}
+
+.bottom {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
 .profile-image {
   height: 400px;
   border-radius: 25px;
