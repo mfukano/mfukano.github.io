@@ -18,7 +18,7 @@ officially as a software engineer. I enjoy fun and intuitive interaction and UI 
 | Usage             | Tech                                         |
 | :------           | :--------------------------------------------| 
 | Languages         | Java, Python, Ruby, Rust, Swift, Objective-C |
-| Devtools          | Docker, MOngoDB, PostgreSQL                  |
+| Devtools          | Docker, MongoDB, PostgreSQL                  |
 | Notable Libraries | Rails, Vue                                   |
 
 ## Experience
