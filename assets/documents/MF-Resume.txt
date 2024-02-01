@@ -17,7 +17,7 @@ and strategies to achieve these goals.
 Professional Experience With:
 | Usage             | Tech                                         |
 | :---------------- | :--------------------------------------------| 
-| Languages         | JavaScript, Java, Python                     |
+| Languages         | JavaScript, HTML, CSS, Java, Python          |
 | Devtools          | AWS, Android Studio, XCode, Git              |
 | Notable Libraries | Next.js, React, Node, Express                |
 
@@ -35,36 +35,33 @@ Limited Experience With / Some Exposure To:
 -- Sophonaut --
 Software Engineer
 Jan 2022 - Jan 2023
-- Improved functionality of existing Next.js Create-React-App fork
-- Led ground-up reimplementation of app with AWS Amplify backend and Next.js SSR
-- Engineered back-end business functionality — results calculation, user friend-list management, user comparison
-- Vastly improved accessibility of data resulting in 10x lower pageload
-- Built mobile-first front-end with React utilizing Amplify GraphQL data queries
+- Improved functionality of existing Next.js Create-React-App fork MVP
+- Led ground-up reimplementation of MVP with AWS Amplify backend and Next.js SSR 
+- Built mobile-first front-end with React utilizing Amplify GraphQL data queries, including user assessment flow and personality results displays
+- Implement business logic transforming submitted responses into personality data models with Lambda expressions and persisted with DynamoDB
+- Restructured data models, vastly improving accessibility of data resulting in 10x lower page-load
 
 -- ironSource --
 
 Technical Solutions Engineering Team Lead
 Nov 2019 - Jan 2022
-- Lead a team of 4 solutions engineers to handle all US client production issues
-- Cultivate environment of strong team collaboration and professional growth opportunities
-- Work with high-value clients to find best-fit solution to their specific business needs
+- Set and measured OKRs for team of 4 solutions engineers supporting all US clients, ensuring SLA requirements met and high client uptime with mediation SDK
+- Collaborate internationally with engineering and leadership teams regarding high-value client needs pre-sales and securing exclusivity in ad placements
+- Conceptualized and executed on internal tooling gaps with Express and Node to improve team workflows
 
 Integration Engineer
 Nov 2018 - Nov 2019
-
-- Diagnose complex integration or product stability / runtime issues
-- Conceptualize and execute on internal tooling gaps for team empowerment
-- Bridge technical communication of satellite office for global company
-- Added internal tooling with Express and Node to improve team workflows
+- Supported development teams integrating monetization in mobile apps via mediation SDK in many different contexts — Unity, Android native (Java, Kotlin), iOS native (Objective-C, Swift)
+- Diagnosed product stability / runtime issues in custom integrations
+- Bridged technical communication of satellite office for global company
 
 -- Pinterest --
 
 Partner Integration Engineer
 Jun 2017 - Oct 2018
-- Troubleshoot API issues, issue escalation and documentation updates, and general API partner integration support
-- Help scope new features from partner-facing perspective
-- Uncover use cases and communicate client needs to engineering, helping to provide smoother implementations between partners and API consumers
-- Create internal polling utilities to understand and scope breadth of impact for reporting outages
+- Supported platforms integrating partner API, running up to 8-figure annual campaign spend through Pinterest ad placements
+- Uncovered use cases and scope client needs and feature requests for engineering
+- Created internal polling utilities to measure breadth of impact for reporting outages
 
 -- Zozi (defunct) --
 
