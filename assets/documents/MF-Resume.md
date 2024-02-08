@@ -1,8 +1,8 @@
 # Objective
 
 I want to contribute to meaningful projects at a company I care about. I have 5 YOE
-working cross-functionally on teams, 2 YOE leading a team of technical solutions, 1 YOE working
-officially as a software engineer. I enjoy fun and intuitive interaction and UI design, thinking about how to integrate front-end and back-end, and learning new technologies and strategies to achieve these goals.
+working cross-functionally on teams working on integrations, support and technical solutions; 2 YOE leading a team of technical solutions; and 1 YOE working
+as a software engineer (full-stack). I enjoy fun and intuitive interaction and UI design, thinking about how to integrate front-end and back-end, and learning new technologies and strategies to achieve these goals.
 
 
 ## Skills 
