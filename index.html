@@ -8,12 +8,12 @@ morphing into a sandbox design experiment for my HTML/CSS
 
 <html>
 <head>
-    <title>Mat Portfolio Design</title>
+    <title>matfukano.com</title>
     <link rel="stylesheet" href="./stylesheets/stylesheet.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body class="preload">
@@ -250,61 +250,13 @@ morphing into a sandbox design experiment for my HTML/CSS
                         style="padding-right: 5px;"/>
                 </a>
             </div>
-
             <div class="text-box">
 
                 <div class="image-container top">
                     <img src="assets/images/mat1.jpg" alt="beard-man" class="profile-image">
                 </div>
-                <h3>Hi there</h3>
-                <p>
-                    Since you're on this page at all, and also actively decided to read about the page author, hello!
-                </p>
-                <br>
-                <p>
-                    My name is Mat and I like to make things and solve problems. Here are a few things in life that are important to me:
-                </p>
-
-                <h3>Tech</h3>
-                <p>
-                    I love to learn, especially when it comes to new technology. Currently I'm focused on:
-                    <ul style="margin-top: 10px;">
-                        <li>React Native</li>
-                        <li>Back-end fundamentals with Node.js vs Bun</li>
-                        <li>Deploying postgres on Docker</li>
-                    </ul>
-                </p>
-
-                <h3>Sustainability</h3>
-                <p>
-                    I believe resource management is one of the worst issues we face today. 
-                    There's an unfathomable amount of waste in the world and at large and small levels, we must strive to be better. 
-                    Even if it's a relatively small impact, I do my best to make sustainable choices every day.
-                </p>
-
-                <h3>Music</h3>
-                <p>
-                    My second love in life is music. I played a variety of instruments in the past and was previously deeply passionate about group music-making.
-                </p>
-                <br>
-                <p>
-                    I developed an interest in electronic music at university.
-                    <a href="https://www.ableton.com">Ableton</a> is probably the single most-used piece of software on
-                    my computer.
-                    I love the freedom to draft and create ideas, and allow people to enjoy my creations.
-                </p>
-                
-                <h3>Cooking</h3>
-                <p>
-                    Part of my enjoyment of making things manifests itself as cooking! I'm a harsh critic with myself 
-                    but I know I make the best french fries I've ever had, and I've had a <b>lot</b> of french fries.
-                </p>
-                
-                <h3>Climbing</h3>
-                <p>
-                    I love climbing! Especially <b>bouldering</b>. It's an awesome way to use your brain and your body to tackle complex problems.
-                    Currently I'm working to send every 5.12a on toprope and V5 on boulder. I'm also making an app to help track my bouldering journey!
-                </p>
+                <zero-md src="https://matfukano.com/assets/documents/MF-About.md">
+                </zero-md>
 
                 <br>
                 <div class="image-container bottom">
@@ -333,20 +285,22 @@ morphing into a sandbox design experiment for my HTML/CSS
             <div class="icons left">
                 <a href="https://linkedin.com/in/marotafuka">
                     <img src="assets/svg/linkedin-logo.svg" alt="linkedin-in" class="icon"/></a>
-                <a href="https://angel.co/mat-fukano">
+                <a href="https://wellfound.com/u/mat-fukano">
                     <img src="assets/svg/victory-sign.svg" alt="angellist-peace" class="icon"/></a>
-                <a href="https://twitter.com/marotafuka">
-                    <img src="assets/svg/twitter-logo.svg" alt="twitter-bluebird" class="icon"/></a>
             </div>
 
             <div class="text-box">
                 <p class="hire-blurb">
-                    I'm starting the search for work once again! <br><br>
-                    I have a year's experience in a small, rapid-iteration startup space doing mostly front-end work with React, but also configuring Next.js on a serverless AWS stack.<br><br>
-                    I have 5 years of experience in technical solutions / integration engineering roles and have experience working with technical points-of-contact at strategic partner companies.<br><br>
-                    I have some experience in leadership roles and working with international teams on a 24-hour cycle.<br><br>
-                    
-                    Feel free to get in touch if the above sounds useful and relevant to you.
+                    I'm actively looking for work once again!
+                    A brief summary of my experience would look something like this, if you're looking to work with me:
+                </p>
+                <ul style="margin-top: 10px; margin-bottom: 30px;">
+                    <li>I have a year's experience in a small, rapid-iteration startup space doing mostly front-end work with React, but also configuring Next.js on a serverless AWS stack.</li>
+                    <li>I have 5 years of experience in technical solutions / integration engineering roles and have experience working with technical points-of-contact at strategic partner companies.</li>
+                    <li>I have some experience in leadership roles and working with international teams on a 24-hour cycle.</li>
+                </ul>
+                <p>
+                    Feel free to get in touch if the above sounds useful and relevant to you!
                 </p>
 
                 <div class="email-form">
@@ -358,7 +312,7 @@ morphing into a sandbox design experiment for my HTML/CSS
                         <input type="text" name="user_name"><br>
                         <label>Email:</label>
                         <input type="email" name="user_email"><br>
-                        <label>Message</label><br>
+                        <label>Message:</label><br>
                         <textarea name="message" id="" cols="30" rows="10"></textarea><br>
 
                         <input type="submit" value="Send" style="width: 100%;" class="submit-button"/>
