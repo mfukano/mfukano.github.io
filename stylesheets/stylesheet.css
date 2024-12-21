@@ -313,6 +313,7 @@ br {
 /* Active Header */
 .active .title {
   padding: 0px;
+  padding-top: 20px;
   animation: transition-back 100ms;
 }
 
@@ -550,15 +551,12 @@ div.shadow {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  margin: 20px 0px;
 }
-
-.top {
-  padding-bottom: 10px;
-}
-
-.bottom {
-  padding-top: 20px;
+.image-container.top {
+  margin: 0px 0px 20px;
 }
 
 .profile-image {
