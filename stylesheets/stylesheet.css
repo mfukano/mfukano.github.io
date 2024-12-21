@@ -1,26 +1,54 @@
 @import "https://fonts.googleapis.com/css?family=Abel|Fjalla+One|Muli|Open+Sans+Condensed:300|Reem+Kufi";
 
 @keyframes fade-out-in {
-  0% { opacity: 0; }
-  1% { opacity: 0; }
-  50% { opacity: 0; }
-  90% { opacity: 0.5; }
-  95% { opacity: 0.75; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes transition-back {
-  0% { opacity: 0; }
-  1% { opacity: 0; }
-  50% { opacity: 0; }
-  90% { opacity: 0.3; }
-  95% { opacity: 0.7; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*
@@ -32,20 +60,28 @@ it should be intuitive enough by the look of the page.
   display: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-
 /* Font stuff */
-h1,h2,h2,h4,h5,h6,p,div {
-  font-family: 'Open Sans Condensed', sans-serif;
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   max-width: 900px;
 }
 
@@ -79,7 +115,25 @@ h4 {
   text-decoration: none;
 }
 
-p, li, em {
+label {
+  font-size: 24px;
+}
+input {
+  font-size: 16px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 2px;
+}
+textarea {
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+p,
+li,
+em {
   font-size: 18px;
   letter-spacing: 0.6px;
   font-family: sans-serif;
@@ -130,7 +184,7 @@ li {
   display: flex;
   flex-flow: column;
   align-items: center;
-  }
+}
 
 /* .active:hover {
   overflow-y: auto;
@@ -148,7 +202,10 @@ li {
 .box.bottom {
   bottom: 0;
 }
-.active .wrapper p,h2,i,br {
+.active .wrapper p,
+h2,
+i,
+br {
   display: block;
   position: auto;
 }
@@ -167,7 +224,9 @@ li {
   flex-flow: column;
   overflow: scroll;
   height: 100%;
-  transition: opacity 100ms cubic-bezier(0.19, 1, 0.22, 1), visibility 0s cubic-bezier(0.19, 1, 0.22, 1);
+  transition:
+    opacity 100ms cubic-bezier(0.19, 1, 0.22, 1),
+    visibility 0s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .active .wrapper {
@@ -179,13 +238,12 @@ li {
   max-height: 10000px;
   transition: visibility 200ms 100ms cubic-bezier(0.19, 1, 0.22, 1);
   padding: 0 30px;
-    /*
+  /*
   * TODO: figure out how to add an ::after element
   * so you can size this to what you want
   */
   border-right: 1px solid rgba(114, 182, 234, 0.2);
   border-left: 1px solid rgba(114, 182, 234, 0.2);
-
 }
 
 /* Front-page divider */
@@ -320,11 +378,10 @@ li {
   margin: 0 auto;
   font-size: 1em;
   line-height: 2em;
-  opacity: .9;
+  opacity: 0.9;
   z-index: 1;
   font-weight: bold;
 }
-
 
 /* Content Styles */
 
@@ -334,6 +391,7 @@ li {
   position: relative;
   margin: 0 auto;
   max-width: 900px;
+  margin-bottom: 20px;
 }
 
 .project-title {
@@ -343,7 +401,7 @@ li {
 .project-description {
   margin: 5px 0;
   padding-top: 5px;
-  border-top: 1px solid #8BC3ED;
+  border-top: 1px solid #8bc3ed;
   font-size: 18px;
 }
 
@@ -353,7 +411,7 @@ li {
   z-index: 10;
 }
 
-.project-link:hover{
+.project-link:hover {
   color: #fff;
 }
 
@@ -388,7 +446,8 @@ li {
 }
 
 /* projects menu */
-.project-dropdown:hover, .project-dropdown:hover * {
+.project-dropdown:hover,
+.project-dropdown:hover * {
   background: #407899;
   border-radius: 5px;
   font-style: none;
@@ -411,18 +470,19 @@ li {
   visibility: visible;
 }
 
-.current:hover, .current:hover * {
+.current:hover,
+.current:hover * {
   background-color: #72b6ea;
 }
 
 /* Projects images carousel */
 p.carousel_controls {
-  text-align:center;
+  text-align: center;
   margin-top: 15px;
 }
 
 .carousel_controls span {
-  cursor:pointer;
+  cursor: pointer;
   text-align: center;
   padding: 10px 15px;
 }
@@ -430,7 +490,7 @@ p.carousel_controls {
 .carousel_controls span:hover {
   background: #ddd;
   background: rgba(65, 65, 65, 0.3);
-  color: #DE6449;
+  color: #de6449;
   border-radius: 3px;
 }
 
@@ -439,10 +499,10 @@ p.carousel_controls {
 }
 
 .carousel {
-  position:relative;
-  height:350px;
+  position: relative;
+  height: 350px;
   width: auto;
-  margin:0 auto 10px;
+  margin: 0 auto 10px;
   margin-top: 20px;
   display: flex;
   flex-flow: column;
@@ -456,27 +516,27 @@ p.carousel_controls {
   height: auto;
   max-width: 80%;
   border-radius: 3px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 
   -webkit-transition: opacity 100ms ease-in-out;
   -moz-transition: opacity 100ms ease-in-out;
   -o-transition: opacity 100ms ease-in-out;
   transition: opacity 100ms ease-in-out;
-  opacity:0;
+  opacity: 0;
   filter: alpha(opacity=0);
   text-align: center;
 }
 
 div.shadow {
-    position:absolute;
-    max-width:65%;
-    max-height:65%;
-    overflow:visible;
-    margin-left: -10%;
+  position: absolute;
+  max-width: 65%;
+  max-height: 65%;
+  overflow: visible;
+  margin-left: -10%;
 }
 
 .carousel img.opaque {
-  opacity:1;
+  opacity: 1;
   filter: alpha(opacity=1);
   margin: 0 auto;
   max-width: 100%;
@@ -484,7 +544,6 @@ div.shadow {
 }
 
 .hire-blurb {
-
 }
 
 .image-container {
@@ -500,7 +559,6 @@ div.shadow {
 
 .bottom {
   padding-top: 20px;
-  margin-bottom: 20px;
 }
 
 .profile-image {
@@ -519,7 +577,8 @@ div.shadow {
 .email-form form {
   width: 65%;
 }
-.email-form input, .email-form textarea {
+.email-form input,
+.email-form textarea {
   width: 100%;
 }
 
@@ -531,7 +590,7 @@ div.shadow {
 }
 
 .submit-button {
-  background-color: #88CCF1;
+  background-color: #88ccf1;
   border: 0px;
   font-family: sans-serif;
   font-weight: bold;
@@ -542,42 +601,33 @@ div.shadow {
   border-radius: 3px;
 }
 .submit-button:active {
-  background-color: #5BB9EC;
+  background-color: #5bb9ec;
   transform: scale(0.98);
-  box-shadow: 3px 2px 22px 1px rgba(0,0,0, 0.24)
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 #error {
-  display: none;
-  background-color: #FA0F36;
-  border: 1px solid #A4031F;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #FFF;
-  margin-bottom: 30px;
-  height: 50px;
-  padding: 10px;
+  background-color: #fa0f36;
   border-radius: 3px;
-  width: 60%;
+  box-shadow: 1px 1px 1px 1px #fa0f36;
 }
 #message {
+  background-color: #58ca2b;
+  box-shadow: 1px 1px 1px 1px #58ca2b;
+}
+#error,
+#message {
   display: none;
-  background-color: #58CA2B;
-  border: 0px;
   font-family: sans-serif;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 30px;
-  height: 50px;
-  padding: 10px;
+  height: 30px;
+  padding: 6px;
   border-radius: 3px;
-  width: 60%;
-}
-#error, #message {
   flex-flow: row;
   justify-content: center;
   align-items: center;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -616,18 +666,19 @@ div.shadow {
   .email-form form {
     width: 100%;
   }
-  #error, #message {
+  #error,
+  #message {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 766px){
+@media screen and (max-width: 766px) {
   p.carousel_controls {
     height: 120px;
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .title {
     font-size: 250%;
   }
@@ -642,7 +693,6 @@ div.shadow {
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .hire-blurb {
-    margin-top: 15%;
     width: 75%;
   }
 }
